@@ -10,12 +10,19 @@ html {
 
 .app h1 {
     color: #FFF;
-    text-align: left;
-    padding: 1.5rem 3rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 1.5rem 3rem;
 }
-
+@media (min-width: 768px){
+    .app h1 {
+        text-align: left;
+        padding: 1.5rem 3rem;
+        display: flex;
+        align-items: center;
+    }
+}
 body {
     font-size: 16px;
     text-align: center;
@@ -48,15 +55,25 @@ body .card-search {
     width: 100%;
     mix-blend-mode: hard-light;
 }
-
+.form-search h2{
+    font-size: 1.8rem;
+}
 .card-search .form-search {
     border: 1px solid black;
     background-color: #FFF;
-    padding: 5rem;
+    padding: 2rem;
     border: none;
     border-radius: 1.5rem;
 }
-
+@media (min-width: 768px) {
+    .card-search .form-search {
+        border: 1px solid black;
+        background-color: #FFF;
+        padding: 5rem;
+        border: none;
+        border-radius: 1.5rem;
+    }
+}
 .form-search form {
     display: flex;
     flex-direction: column;
@@ -65,10 +82,17 @@ body .card-search {
 .form-search form input[type="text"] {
     padding: .5rem 1rem;
     border-radius: .5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
 }
+@media (min-width: 768px){
 
+    .form-search form input[type="text"] {
+        padding: .5rem 1rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
 .form-search form input[type="text"]:focus {
     outline: none;
 }
@@ -121,10 +145,15 @@ body .card-search {
 }
 
 .card-item-city .status_day {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 600;
 }
-
+@media (min-width: 768px){
+    .card-item-city .status_day {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
 .card-item-city .temp_now {
     font-size: 2.8rem;
     margin: 0;
@@ -144,6 +173,7 @@ body .card-search {
     padding: .5rem 2rem;
     color: #FFF;
     font-weight: 600;
+    margin-top: 3rem;
 }
 
 .footer .footer_tecnologies {
