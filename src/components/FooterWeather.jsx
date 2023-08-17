@@ -7,7 +7,7 @@ import iconVite from "../assets/vite.svg"
 const FooterWeather = () => {
   return (
     <div className='footer'>
-        <p className='footer_text'>Proyecto realizado por Lizandro Narvaez</p>
+        <h2 className='footer_text'>Proyecto realizado por Lizandro Narvaez</h2>
         <div className='footer_tecnologies'>
             <p>Tecnologias Usadas</p>
             <img src={iconVite} alt="vite" />

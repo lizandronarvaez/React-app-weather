@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>WeatherApp City<img src={celsius} alt="icon" /></h1>
+      <h1>WeatherApp City<span>ºC</span></h1>
       <WeatherApp />
       <FooterWeather />
     </div>

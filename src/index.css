@@ -1,5 +1,7 @@
 html {
     font-size: 62.5%;
+    position: relative;
+    min-height: 100%;
 }
 
 *,
@@ -11,17 +13,15 @@ html {
 .app h1 {
     color: #FFF;
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 1.5rem 3rem;
+    margin: 0;
+    font-size: 2.4rem;
 }
-@media (min-width: 768px){
-    .app h1 {
-        text-align: left;
-        padding: 1.5rem 3rem;
-        display: flex;
-        align-items: center;
-    }
+
+.app h1 span{
+    margin-left: 1rem;
+    font-size: 4rem;
 }
 body {
     font-size: 16px;
@@ -61,7 +61,7 @@ body .card-search {
 .card-search .form-search {
     border: 1px solid black;
     background-color: #FFF;
-    padding: 2rem;
+    padding: 1rem;
     border: none;
     border-radius: 1.5rem;
 }
@@ -127,8 +127,13 @@ body .card-search {
     width: 100%;
     height: 100%;
     background-color: #FF6732;
+    margin-bottom: 12rem;
 }
-
+@media (min-width:768px){
+    .card-item-city{
+        margin-bottom: 0;
+    }
+}
 .card-item-city .name_city {
     font-size: 4rem;
     font-weight: 600;
@@ -170,12 +175,19 @@ body .card-search {
 /* FOOTER */
 .footer {
     background-color: #FF6732;
-    padding: .5rem 2rem;
+    padding: .5rem 0;
     color: #FFF;
     font-weight: 600;
-    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
-
+.footer h2{
+    padding: 0 1rem;
+}
+.footer .footer_text{
+    font-size: 1.6rem;
+}
 .footer .footer_tecnologies {
     display: flex;
     justify-content: center;
@@ -192,12 +204,8 @@ body .card-search {
         background-color: #FF6732;
         display: flex;
         justify-content: space-between;
-        padding: 1.5rem 2rem;
     }
-    .footer .footer_text{
-        text-align: left;
-    }
-    
+
     .footer .footer_tecnologies{
         display: flex;
     }
